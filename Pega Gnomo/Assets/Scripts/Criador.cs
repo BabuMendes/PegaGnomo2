@@ -44,8 +44,8 @@ public class Criador : MonoBehaviour
         if (meutempo > 1)
         {
             meutempo = 0;
-            float chance = Random.Range(0, 15);
-            if (chance <= 12)
+            float chance = Random.Range(0, 30);
+            if (chance <= 20)
             {
                 CriaGalhos();
             }
