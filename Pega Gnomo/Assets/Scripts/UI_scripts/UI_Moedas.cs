@@ -18,6 +18,6 @@ public class UI_Moedas : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        MeuTexto.text = InfoJogador.macas.ToString();
+        MeuTexto.text = InfoJogador.pontos.ToString();
     }
 }

@@ -48,6 +48,6 @@ public class GerenciadorDoJogo : MonoBehaviour
 
     public void ReceberMoedaMorreu(int n_macas)
     {
-        MeuBanco.GuardarNoBanco(n_macas);
+        //MeuBanco.GuardarNoBanco(n_macas);
     }
 }

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 40013265737752514}
   m_Layer: 0
   m_Name: MacaComum
-  m_TagString: Coletavel
+  m_TagString: MacaComum
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

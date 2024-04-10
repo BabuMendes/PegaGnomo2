@@ -10,6 +10,13 @@ TagManager:
   - tag_som_maca
   - tag_som_galho
   - tag_som_moeda
+  - MacaComun
+  - MacaVerde
+  - LimaoBranco
+  - LimaoSiciliano
+  - MangaPalmer
+  - MangaRosa
+  - MacaComum
   layers:
   - Default
   - TransparentFX

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Gnomo : MonoBehaviour
 {
     private int vida = 3;
-    public int macas = 0;
+    public int pontos = 0;
     private GerenciadorDoJogo GJ;
 
     // Start is called before the first frame update
@@ -42,18 +42,63 @@ public class Gnomo : MonoBehaviour
             vida--;
             if (vida <= 0)
             {
-                GJ.ReceberMoedaMorreu(macas);
+                GJ.ReceberMoedaMorreu(pontos);
                 GJ.Morreu();
             }
         }
 
-        if (colisao.gameObject.tag == "Coletavel")
+        if (colisao.gameObject.tag == "MacaComum")
         {
             ///Chamada do Som Maçã
             ///
             GameObject.FindGameObjectWithTag("tag_som_maca").GetComponent<AudioSource>().Play();
             Destroy(colisao.gameObject);
-            macas++;
+            pontos++;
+        }
+
+        if (colisao.gameObject.tag == "MacaVerde")
+        {
+            ///Chamada do Som Maçã
+            ///
+            GameObject.FindGameObjectWithTag("tag_som_maca").GetComponent<AudioSource>().Play();
+            Destroy(colisao.gameObject);
+            pontos = pontos + 2;
+        }
+
+        if (colisao.gameObject.tag == "LimaoBranco")
+        {
+            ///Chamada do Som Maçã
+            ///
+            GameObject.FindGameObjectWithTag("tag_som_maca").GetComponent<AudioSource>().Play();
+            Destroy(colisao.gameObject);
+            vida = vida + 1;
+        }
+
+        if (colisao.gameObject.tag == "LimaoSiciliano")
+        {
+            ///Chamada do Som Maçã
+            ///
+            GameObject.FindGameObjectWithTag("tag_som_maca").GetComponent<AudioSource>().Play();
+            Destroy(colisao.gameObject);
+            pontos = pontos + 2;
+        }
+
+        if (colisao.gameObject.tag == "MangaPalmer")
+        {
+            ///Chamada do Som Maçã
+            ///
+            GameObject.FindGameObjectWithTag("tag_som_maca").GetComponent<AudioSource>().Play();
+            Destroy(colisao.gameObject);
+            pontos = pontos + 2;
+        }
+
+        if (colisao.gameObject.tag == "MangaRosa")
+        {
+            ///Chamada do Som Maçã
+            ///
+            GameObject.FindGameObjectWithTag("tag_som_maca").GetComponent<AudioSource>().Play();
+            Destroy(colisao.gameObject);
+            pontos = pontos + 2;
         }
     }
 }
