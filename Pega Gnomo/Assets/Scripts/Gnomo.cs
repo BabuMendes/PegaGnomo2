@@ -6,7 +6,8 @@ public class Gnomo : MonoBehaviour
 {
     private int vida = 3;
     public int pontos = 0;
-    private GerenciadorDoJogo GJ;
+    private int velocidade;
+    private GerenciadorDoJogo GJ; 
 
     // Start is called before the first frame update
     void Start()
@@ -80,7 +81,7 @@ public class Gnomo : MonoBehaviour
             ///
             GameObject.FindGameObjectWithTag("tag_som_maca").GetComponent<AudioSource>().Play();
             Destroy(colisao.gameObject);
-            pontos = pontos + 2;
+            vida = vida + 2;
         }
 
         if (colisao.gameObject.tag == "MangaPalmer")
@@ -89,7 +90,7 @@ public class Gnomo : MonoBehaviour
             ///
             GameObject.FindGameObjectWithTag("tag_som_maca").GetComponent<AudioSource>().Play();
             Destroy(colisao.gameObject);
-            pontos = pontos + 2;
+            velocidade = velocidade + 1;
         }
 
         if (colisao.gameObject.tag == "MangaRosa")
@@ -98,7 +99,7 @@ public class Gnomo : MonoBehaviour
             ///
             GameObject.FindGameObjectWithTag("tag_som_maca").GetComponent<AudioSource>().Play();
             Destroy(colisao.gameObject);
-            pontos = pontos + 2;
+            velocidade = velocidade + 2;
         }
     }
 }
