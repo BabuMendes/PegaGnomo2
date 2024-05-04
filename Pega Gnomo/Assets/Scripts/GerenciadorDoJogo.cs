@@ -13,6 +13,8 @@ public class GerenciadorDoJogo : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //pagar arquivo
+        //PlayerPrefs.DeleteAll();
         MeuBanco = GetComponent<Banco>();
     }
 
@@ -48,6 +50,6 @@ public class GerenciadorDoJogo : MonoBehaviour
 
     public void ReceberMoedaMorreu(int n_macas)
     {
-        //MeuBanco.GuardarNoBanco(n_macas);
+        MeuBanco.GuardarNoBanco(n_macas);
     }
 }
