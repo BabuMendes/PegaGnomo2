@@ -21,7 +21,10 @@ public class GerenciadorDoJogo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            ReiniciarPartida();
+        }
     }
 
     public void IniciarJogo()
@@ -51,5 +54,10 @@ public class GerenciadorDoJogo : MonoBehaviour
     public void ReceberMoedaMorreu(int n_macas)
     {
         MeuBanco.GuardarNoBanco(n_macas);
+    }
+
+    private void ReiniciarPartida()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
