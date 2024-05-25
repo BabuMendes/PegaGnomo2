@@ -8929,7 +8929,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Desviar dos graveros
+  m_text: Desviar dos gravetos
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 05bed890baae79047a937f144c6436ba, type: 2}
   m_sharedMaterial: {fileID: 7732472656059737755, guid: 05bed890baae79047a937f144c6436ba, type: 2}
