@@ -24,13 +24,13 @@ public class Loja : MonoBehaviour
     {
         //Informação do nível do coração
         int vidascompradas = PlayerPrefs.GetInt("nivelVida") + 1;
-        int custo = (vidascompradas * 5);
+        int custo = (vidascompradas * 10);
         valorCoracao.text = "VIDA LV: " + vidascompradas.ToString() + " $: " + custo.ToString();
 
         int frutascompradas = PlayerPrefs.GetInt("nivelFruta") + 1;
         if (frutascompradas < 6)
         {
-            int custoFruta = (frutascompradas * 10);
+            int custoFruta = (frutascompradas * 100);
             valorFruta.text = "FRUTA LV: " + frutascompradas.ToString() + " $: " + custoFruta.ToString();
         }
         else
