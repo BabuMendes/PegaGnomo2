@@ -51,6 +51,7 @@ public class Timer : MonoBehaviour
             min = 0;
             sec = 0;
             isGameOver = true;
+            gerenciadorDoJogo.MortePorTempo();
             GameOver();
             //Time.timeScale = 0f;
         }

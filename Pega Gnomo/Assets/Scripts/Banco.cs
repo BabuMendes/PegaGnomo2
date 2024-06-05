@@ -56,7 +56,8 @@ public class Banco : MonoBehaviour
         if (dinheiroBanco >= custo)
         {
             //Puder pagar e paguei
-            GameObject.FindGameObjectWithTag("tag_som_moeda").GetComponent<AudioSource>().Play();
+            //GameObject.FindGameObjectWithTag("tag_som_moeda").GetComponent<AudioSource>().Play();
+            AudioManager.instance.PlaySFX("Compra");
             RetirardoBanco(custo);
             return true;
         }

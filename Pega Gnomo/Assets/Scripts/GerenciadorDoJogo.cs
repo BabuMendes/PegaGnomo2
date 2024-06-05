@@ -46,6 +46,12 @@ public class GerenciadorDoJogo : MonoBehaviour
         MenuGameOVER.SetActive(true);
     }
 
+    public void MortePorTempo()
+    {
+        int moeda = GameObject.FindGameObjectWithTag("Player").GetComponent<Gnomo>().pontos;
+        ReceberMoedaMorreu(moeda);
+    }
+
     public void Reiniciar()
     {
         SceneManager.LoadScene(0);

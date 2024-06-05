@@ -38,8 +38,9 @@ public class Gnomo : MonoBehaviour
         if (colisao.gameObject.tag == "Inimigo")
         {
             ///Chamar Som Galho
-            GameObject.FindGameObjectWithTag("tag_som_galho").GetComponent<AudioSource>().Play();
+            //GameObject.FindGameObjectWithTag("tag_som_galho").GetComponent<AudioSource>().Play();
             Destroy(colisao.gameObject);
+            AudioManager.instance.PlaySFX("Dano");
             vida--;
             if (vida <= 0)
             {
@@ -52,8 +53,9 @@ public class Gnomo : MonoBehaviour
         {
             ///Chamada do Som Maçã
             ///
-            GameObject.FindGameObjectWithTag("tag_som_maca").GetComponent<AudioSource>().Play();
+            //GameObject.FindGameObjectWithTag("tag_som_maca").GetComponent<AudioSource>().Play();
             Destroy(colisao.gameObject);
+            AudioManager.instance.PlaySFX("Coleta");
             pontos++;
         }
 
@@ -61,8 +63,9 @@ public class Gnomo : MonoBehaviour
         {
             ///Chamada do Som Maçã
             ///
-            GameObject.FindGameObjectWithTag("tag_som_maca").GetComponent<AudioSource>().Play();
+            //GameObject.FindGameObjectWithTag("tag_som_maca").GetComponent<AudioSource>().Play();
             Destroy(colisao.gameObject);
+            AudioManager.instance.PlaySFX("Coleta");
             pontos = pontos + 2;
         }
 
@@ -70,8 +73,9 @@ public class Gnomo : MonoBehaviour
         {
             ///Chamada do Som Maçã
             ///
-            GameObject.FindGameObjectWithTag("tag_som_maca").GetComponent<AudioSource>().Play();
+            //GameObject.FindGameObjectWithTag("tag_som_maca").GetComponent<AudioSource>().Play();
             Destroy(colisao.gameObject);
+            AudioManager.instance.PlaySFX("Coleta");
             vida = vida + 1;
         }
 
@@ -79,8 +83,9 @@ public class Gnomo : MonoBehaviour
         {
             ///Chamada do Som Maçã
             ///
-            GameObject.FindGameObjectWithTag("tag_som_maca").GetComponent<AudioSource>().Play();
+            //GameObject.FindGameObjectWithTag("tag_som_maca").GetComponent<AudioSource>().Play();
             Destroy(colisao.gameObject);
+            AudioManager.instance.PlaySFX("Coleta");
             vida = vida + 2;
         }
 
@@ -88,8 +93,9 @@ public class Gnomo : MonoBehaviour
         {
             ///Chamada do Som Maçã
             ///
-            GameObject.FindGameObjectWithTag("tag_som_maca").GetComponent<AudioSource>().Play();
+            //GameObject.FindGameObjectWithTag("tag_som_maca").GetComponent<AudioSource>().Play();
             Destroy(colisao.gameObject);
+            AudioManager.instance.PlaySFX("Coleta");
             velocidade = velocidade + 1;
         }
 
@@ -97,8 +103,9 @@ public class Gnomo : MonoBehaviour
         {
             ///Chamada do Som Maçã
             ///
-            GameObject.FindGameObjectWithTag("tag_som_maca").GetComponent<AudioSource>().Play();
+            //GameObject.FindGameObjectWithTag("tag_som_maca").GetComponent<AudioSource>().Play();
             Destroy(colisao.gameObject);
+            AudioManager.instance.PlaySFX("Coleta");
             velocidade = velocidade + 2;
         }
     }
